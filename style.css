@@ -3,17 +3,35 @@
     padding:0;
     text-align: center;
     background-color: darkgrey;
-   
 }
-
+body{
+    background-color: #bcbc;
+}
 h1{
     background-color: #081b31;
     color: white;
     height: 3rem;
     line-height: 3rem;
-
     display: inline;
 }
+.cards{
+   display:flex;
+}
+.card1{
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px grey;
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 3rem;    
+}
+.card1:hover{
+    box-shadow: 12px 10px 4px rgb(85, 85, 85);
+    cursor: pointer;
+}
+
+
 .choice{
     height: 90px;
     width: 90px;
@@ -65,4 +83,15 @@ img{
     display: inline;
     padding: 1rem;
     border-radius: 1rem;
+}
+@media(max-width:800px){
+    .productCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 50%;
+        margin-top: 25px;
+    }
+
 }
